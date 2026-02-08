@@ -75,7 +75,7 @@ docker images
 4. Run Docker container:
 
 ```bash
-docker run -d -p 80:3000 8byte-app
+docker run -d -p 3000:3000 8byte-app
 ```
 
 ---
@@ -131,7 +131,7 @@ ssh -i key.pem ec2-user@<EC2_PUBLIC_IP>
 4. Run Docker container:
 
 ```bash
-docker run -d -p 80:3000 8byte-app
+docker run -d -p 3000:3000 8byte-app
 ```
 
 5. Access application in browser:
@@ -161,9 +161,18 @@ This ensures that every code change is automatically tested and built without ma
 The following screenshots are included in the repository:
 
 * Terraform apply successful output
+  <img width="966" height="521" alt="8byte_16" src="https://github.com/user-attachments/assets/8a49b32f-6d06-46a0-b520-5d40d15f0887" />
+  <img width="751" height="395" alt="8byte_17" src="https://github.com/user-attachments/assets/1a7a6741-41a4-43fb-8cc8-41848849adca" />
+
 * Running EC2 instance in AWS console
+  <img width="1293" height="905" alt="8byte_18" src="https://github.com/user-attachments/assets/d4f287f7-e923-422c-b81d-8f45febc0fbe" />
+
 * Application running in browser using EC2 public IP
+  <img width="1287" height="243" alt="8byte_24" src="https://github.com/user-attachments/assets/8eb0ed90-c0b9-4753-88a2-d2d8ef82c1fb" />
+
 * Successful GitHub Actions pipeline execution
+  <img width="1918" height="875" alt="8byte_32" src="https://github.com/user-attachments/assets/fe5b27eb-2578-4864-a467-f36cb72df400" />
+
 
 ---
 
@@ -172,8 +181,10 @@ The following screenshots are included in the repository:
 * GitHub Repository:
   [https://github.com/PoojaPrakash08/8byte-intern-assignment](https://github.com/PoojaPrakash08/8byte-intern-assignment)
 
-* EC2 Public IP / Application URL:
-  *(Add EC2 Public IP here)*
+* Public Application URL:
+  The application is deployed on an AWS EC2 instance and is accessible via the following Elastic IP when the instance    is running:
+  http:](http://13.53.183.148:3000/)
+  
 
 * Screenshots folder containing:
 
